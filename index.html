@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/b3178bb50e.js"></script>
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.5.6/dist/progressbar.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <div class='container'>
+        <h1 class='title'> Pomodoro Clock </h1>
+        <div class='grid-container'>
+            <div class='grid-item item5'>Session min</div>
+            <div class='grid-item item1'>
+                <button class='button fa fa-plus sessionPlusBtn'></button>
+                <div id='setTime'></div>
+                <button class='button fa fa-minus sessionMinusBtn'></button>
+            </div>
+            <div class='grid-item item6'>Break min</div>
+            <div class='grid-item item2'>
+                <button class='button fa fa-plus breakPlusBtn'></button>
+                <div id='breakTime'></div>
+                <button class='button fa fa-minus breakMinusBtn'></button>
+            </div>
+            <div class='grid-item item3' id='timer'>
+
+                <button id='button1' class="pomodoro-clock button1" >
+                    <div id="circle" class="relationship-status-progressbar progressbar"></div>
+                    <div class="timer-box">
+                        <p class="screen"></p>
+                    </div>
+                </button>
+
+            </div>
+            <div class='grid-item item4' id='reset'>
+                <button class='reset'>RESET</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

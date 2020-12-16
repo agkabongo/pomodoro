@@ -1,0 +1,119 @@
+.container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 5em;
+
+    margin-bottom: 70px;
+}
+
+.item5,
+.item6 {
+
+    font-size: 2em;
+}
+
+.item1 {
+    grid-area: setTime;
+    
+}
+
+.item2 {
+    grid-area: breakTime;
+    
+}
+
+.item3 {
+    grid-area: timer;
+    
+}
+
+.item4 {
+    grid-area: reset;
+}
+
+.item5 {
+    grid-area: set; /*session min*/
+    
+}
+
+.item6 {
+    grid-area: break; /*break min*/
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'set break'
+    'setTime breakTime'
+    'timer timer'
+    'reset reset'
+}
+
+
+.pomodoro-clock {
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timer-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0px;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.screen {
+    font-size: 4.8em;
+    margin: 0;
+    line-height: 1;
+}
+
+.button1 {
+    font-size: 16px;
+    color: #4c4c4c;
+    background-color: white;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+#breakTime,
+#setTime {
+    border: 2px solid #f49e42;
+    border-radius: 100%;
+    font-size: 2.3em;
+    height: 75px;
+    width: 75px;
+    padding: 12px;
+    margin: 0 auto;
+}
+
+.fa-plus,
+.fa-minus {
+    font-size: 2em;
+    background-color: white;
+    border: none;
+}
+
+.reset {
+    border: none;
+    background-color: white;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    color: #f49e42
+}
