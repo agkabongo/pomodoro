@@ -4,9 +4,12 @@
 }
 
 .title {
-    font-size: 5em;
+    font-size: 4em;
 
     margin-bottom: 70px;
+}
+mark {
+    background-color:#f49e42;
 }
 
 .item5,
