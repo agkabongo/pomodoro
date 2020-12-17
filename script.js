@@ -12,6 +12,7 @@ let breakPlusBtn = document.querySelector('.breakPlusBtn')
 let breakMinusBtn = document.querySelector('.breakMinusBtn')
 let button1=document.getElementById('button1')
 let reset = document.querySelector('.reset')
+let circle = document.getElementById('circle')
 
 sessionPlusBtn.addEventListener('click', addSession)
 sessionMinusBtn.addEventListener('click',subSession)
@@ -21,7 +22,7 @@ button1.addEventListener('click',startFunction)
 reset.addEventListener('click',resetFunction)
 
 
-let progressCircle = new ProgressBar.Circle('#circle', {
+let progressCircle = new ProgressBar.Circle(circle, {
     strokeWidth: 3,
     duration: session * 60000, //25*60000 sec
     color: '#21abe9',
